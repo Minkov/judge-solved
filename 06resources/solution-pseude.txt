@@ -1,0 +1,25 @@
+// with no dependencies, first lex....
+
+
+// x -> y
+// O(sqrt(m))
+// counts[y] += 1;
+// find all with count 0, not used
+counts = {}
+
+func getBestVertex() 
+    get from counts, the vertex with smallest 
+
+    // O(m*sqrt(m))
+    vertices
+        remove all used
+        remove all with incoming edges
+
+}
+
+while ....
+    v = getBestVertex()
+
+    add to result
+
+    delete v from dependencies
