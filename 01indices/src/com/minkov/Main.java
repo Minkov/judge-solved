@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Main {
   private static void findSequence(List<Integer> list) {
-    boolean[] isChecked = new boolean[list.size()];
-    List<Integer> indexes = new ArrayList<>(list);
+    var isChecked = new boolean[list.size()];
+    var indexes = new ArrayList<>(list);
 
     int length = list.size();
     int index = 0;
@@ -39,10 +39,10 @@ public class Main {
   }
 
   private static void printSequenceWithCycle(List<Integer> seq, int startIndex) {
-    List<Integer> array = new ArrayList<>(seq);
+    var array = new ArrayList<>(seq);
     int index = 0;
 
-    StringBuilder str = new StringBuilder();
+    var str = new StringBuilder();
 
     for (int i = 0; i < array.size(); i++) {
       if (array.get(i) == startIndex) {
@@ -54,7 +54,7 @@ public class Main {
         .append(" ");
     }
 
-    String sequence = str.toString()
+   String sequence = str.toString()
       .trim();
 
     str = new StringBuilder();
@@ -65,7 +65,7 @@ public class Main {
       str.append(array.get(i))
         .append(" ");
     }
-    String cycle = str.toString()
+    var cycle = str.toString()
       .trim();
 
     System.out.println(sequence + cycle + ")");
